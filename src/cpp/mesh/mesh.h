@@ -111,6 +111,12 @@ public:
 		return mVertexCount;
 	}
 
+	inline void copyVertexData(void *buffer, size_t bufferByteSize) {
+		const size_t size = mStride * mVertexCount;
+		assert(bufferByteSize == size);
+		std::memcpy(buffer, mVertices, size);
+	}
+
 	inline void setExternalVertexBuffer(void *buffer, size_t bufferByteSize) {
 		if (buffer != mVertices) {
 			setNewExternalVertexBuffer(buffer, bufferByteSize);

@@ -31,6 +31,7 @@ private:
 	PaintRef lineColor;
 	std::string name;
 
+	int16_t pathIndex;
 	uint8_t changes;
 	float exactBounds[4];
 
@@ -195,6 +196,14 @@ public:
 
 	inline bool hasFill() const {
 		return nsvg.fill.type > 0;
+	}
+
+	inline int getIndex() const {
+		return pathIndex;
+	}
+
+	inline void setIndex(int index) {
+		pathIndex = index;
 	}
 
 	inline bool hasNormalFillStrokeOrder() const {

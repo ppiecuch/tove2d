@@ -292,9 +292,9 @@ const ToveRasterizeSettings *getDefaultRasterizeSettings() {
 }
 
 inline TOVEditherType convertToveDitherType(ToveDitherType t) {
-	static_assert(int(TOVE_DITHER_NONE) == int(TOVE_NSVG_DITHER_NONE));
-	static_assert(int(TOVE_DITHER_DIFFUSION) == int(TOVE_NSVG_DITHER_DIFFUSION));
-	static_assert(int(TOVE_DITHER_ORDERED) == int(TOVE_NSVG_DITHER_ORDERED));
+	static_assert(int(TOVE_DITHER_NONE) == int(TOVE_NSVG_DITHER_NONE), "Dihtering configuration failed.");
+	static_assert(int(TOVE_DITHER_DIFFUSION) == int(TOVE_NSVG_DITHER_DIFFUSION), "Dihtering configuration failed.");
+	static_assert(int(TOVE_DITHER_ORDERED) == int(TOVE_NSVG_DITHER_ORDERED), "Dihtering configuration failed.");
 	return TOVEditherType(t);
 }
 

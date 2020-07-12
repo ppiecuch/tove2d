@@ -11,7 +11,7 @@
 
 BEGIN_TOVE_NAMESPACE
 
-#if TOVE_TARGET == TOVE_TARGET_LOVE2D
+#if TOVE_GODOT || TOVE_TARGET == TOVE_TARGET_LOVE2D
 
 template<typename T, typename ToveType>
 struct References {

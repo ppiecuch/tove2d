@@ -993,6 +993,10 @@ int MeshGetVertexCount(ToveMeshRef mesh) {
 	return deref(mesh)->getVertexCount();
 }
 
+void MeshCopyVertexData(ToveMeshRef mesh, void *buffer, int32_t size) {
+	deref(mesh)->copyVertexData(buffer, size);
+}
+
 void MeshSetVertexBuffer(ToveMeshRef mesh, void *buffer, int32_t size) {
 	deref(mesh)->setExternalVertexBuffer(buffer, size);
 }

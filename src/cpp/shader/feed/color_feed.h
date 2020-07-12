@@ -34,6 +34,9 @@ public:
 
 	virtual void bindPaintIndices(const ToveGradientData &data) {
 	}
+
+	virtual void bind(const ToveGradientData &data) {
+	}
 };
 
 class ColorFeed : public AbstractFeed {
