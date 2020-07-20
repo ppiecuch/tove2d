@@ -1,2 +1,2 @@
 // include Godot-provided clipper library
-#include "thirdparty/clipper.hpp"
+#include "thirdparty/misc/clipper.hpp"
