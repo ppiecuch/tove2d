@@ -75,6 +75,7 @@ public:
 	const float *getExactBounds();
 
 	void addSubpath(const SubpathRef &t);
+	void removeSubpath(const SubpathRef &t);
 
 	void setName(const char *name);
 	inline const char *getName() const {
