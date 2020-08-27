@@ -120,6 +120,8 @@ public:
 		}
 	}
 
+	float getScale() const { return scale; }
+
 	virtual ToveChangeFlags beginUpdate() {
 		ToveChangeFlags changes = 0;
 		for (auto &feed : feeds) {

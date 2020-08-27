@@ -86,9 +86,8 @@ class NonVanishingAreas {
 	uint8_t * const result;
 
 public:
-	inline NonVanishingAreas(
-		uint8_t *result, float eps) :
-		result(result), eps(eps) {
+	inline NonVanishingAreas(uint8_t *result, float eps)
+	: eps(eps), result(result) {
 	}
 
 	inline void operator()(int i, float area) const {
